@@ -1,0 +1,31 @@
+{
+    "test" : ["#floatNaviBox"],
+    "entity" : "com.duoec.htmlparse.House",
+    "items" : [
+        {
+            "name" : "id",
+            "target" : "url",
+            "pattern" : ""
+        },
+        {
+            "name" : "houseName",
+            "path" : "",
+            "pipes" : ["trim"],
+            "validate" : ["required"]
+        },
+        {
+            "name" : "flats",
+            "path" : "",
+            "items" : [
+                {
+                    "name" : "id",
+                    "path" : ""
+                },
+                {
+                    "name" : "name",
+                    "path" : ""
+                }
+            ]
+        }
+    ]
+}
